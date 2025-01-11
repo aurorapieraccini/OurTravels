@@ -11,5 +11,10 @@ class VisitedCountry(models.Model):
     country = models.ForeignKey(Country, on_delete=models.CASCADE)
     user = models.ForeignKey(User, on_delete=models.CASCADE)
 
+class VisitedCities(models.Model):
+    country = models.ForeignKey(Country, on_delete=models.CASCADE)
+    user = models.ForeignKey(User, on_delete=models.CASCADE)
+
+
     def __str__(self):
         return "User %s has visited country %s" % (self.user, self.country)
