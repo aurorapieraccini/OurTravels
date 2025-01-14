@@ -14,12 +14,13 @@ class VisitedCountry(models.Model):
 
 class City(models.Model): 
     name = models.CharField(max_length=168)
+    country = models.ForeignKey(Country, on_delete=models.CASCADE, null=False)
 
     def __str__(self):
         return self.name
 
 class VisitedCities(models.Model):
-    country = models.ForeignKey(City, on_delete=models.CASCADE)
+    city = models.ForeignKey(City, on_delete=models.CASCADE)
     user = models.ForeignKey(User, on_delete=models.CASCADE)        
 
 
