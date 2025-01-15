@@ -20,6 +20,6 @@ from travels.views import ourtravels
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('travels/', include("travels.urls")),
+    
     path('', ourtravels),
 ]
