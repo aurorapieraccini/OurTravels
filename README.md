@@ -46,5 +46,14 @@ in terminal to load python virtual environment, if it doesnt happen automaticall
 # ./manage.py createsuperuser
 Create file /etc/apache2/sites-available/001-ourtravels.conf
 # cd /etc/apache2/sites-enabled
-# sudo ln -s ../sites-available/001-ourtravels.conf 001-ourtravels.conf
+# sudo ln -s ../sites-available/001-ourtravels.conf 001-ourtravels.conf   
+needed to change the pyhton path /django
+# sudo vi /etc/apache2/sites-enabled/001-ourtravels.conf
+# sudo service apache2 restart
+# cd /var/www/html/OurTravels
+cd django
+cd OurTravels/
+ls
+vi settings.py 
+sudo service apache2 restart
 ```
