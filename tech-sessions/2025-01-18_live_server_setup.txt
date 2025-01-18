@@ -1,0 +1,13 @@
+OurTravels.ai tech session
+--------------------------
+
+ssh-keygen -t ed25519 -C "ulf-2025-01-01"
+launch server with one key installed, ssh to it
+- install mysql, create db and account
+- install webserver, with python, fix configs
+- checkout code from github (using separate key)
+
+- DNS provider: configure DNS 
+- domain registar: delegate DNS servers
+
+- configure SSL certificate via letsencrypt, using certbot
